@@ -1,0 +1,11 @@
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/.idea/.idea.chatbot-with-mcp/.idea
+/.vs/chatbot-with-mcp
+/BOT.Api/obj
+/BOT.Application/obj
+/BOT.Domain/obj
+/BOT.Infrastructure/obj
+/BOT.Server/obj
