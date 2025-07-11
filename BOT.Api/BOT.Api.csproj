@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.4"/>
+    </ItemGroup>
+     <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.15" />
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.16" />
+        <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="9.6.0-preview.1.25310.2" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    </ItemGroup>
+        <ItemGroup>
+      <ProjectReference Include="..\BOT.Application\BOT.Application.csproj" />
+      <ProjectReference Include="..\BOT.Infrastructure\BOT.Infrastructure.csproj" />
+    </ItemGroup>
+
+
+</Project>
