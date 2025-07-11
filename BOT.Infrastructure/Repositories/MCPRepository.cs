@@ -7,7 +7,6 @@ namespace BOT.Infrastructure.Repositories;
 
 public class MCPRepository(IMcpClient mcpClient) : IMCPRepository
 {
-    private string? Jwt;
     public async Task<IEnumerable<McpTool>> GetAvailableToolsAsync()
     {
         var tools = await mcpClient.ListToolsAsync();

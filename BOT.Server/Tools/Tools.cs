@@ -55,7 +55,6 @@ public class Tools(ISampleRepository sampleRepository)
     
         try
         {
-            
             // THE JWT IS PASSED TO EACH REPOSITORY OPERATION
             // THE JWT IS INJECTED BY THE MCP SDK TO THE TOOL AS ASKED IN INITIAL CONFIG PROMPT
             var sampleResult = await sampleRepository.SampleOperation(jwt);

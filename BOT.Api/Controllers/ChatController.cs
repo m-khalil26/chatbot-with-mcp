@@ -23,7 +23,6 @@ public class ChatController(IChatService chatService) : ControllerBase
 
     [HttpPost("stream")]
     [Authorize]
-
     public async Task<IActionResult> ProcessStreamingChat([FromBody] ChatRequestDto request)
     {
         var jwt = HttpContext.Request.Headers["Authorization"].ToString().Replace("Bearer ", "");

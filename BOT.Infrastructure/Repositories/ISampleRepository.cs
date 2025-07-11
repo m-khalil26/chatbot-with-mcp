@@ -33,17 +33,17 @@ public class SampleRepository(HttpClient httpClient, IOptions<ApiSettings> optio
         {
             if (!response.IsSuccessStatusCode)
             {
-                LogToFile("Error while getting all events from Association repository");
+                LogToFile("Error while calling Get");
                 LogToFile($"Response status :"+response.StatusCode);
                 return null;
             }
-            LogToFile("Association trouvée");
+            LogToFile("Success");
             var value =await response.Content.ReadFromJsonAsync<SampleDto?>();
             return value;
         }
         catch (Exception ex)
         {
-            LogToFile("Error while getting all events from PlanningRepository");
+            LogToFile("Error while fetching sample data");
             LogToFile($"Error:{ex.StackTrace}");
             return null;
         }
